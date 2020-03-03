@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { TestContext } from "@as-pect/core";
-// import { EmptyReporter } from '@as-pect/core';
+import { TestContext, EmptyReporter } from "@as-pect/core";
+// import { EmptyReporter./DomReporter
 
 interface Props {
     binary?: Uint8Array;
@@ -31,7 +31,7 @@ const DomReporter: React.FC<Props> = ({ binary }) => {
             // stdout: null, // something that can write(input: string): void
             // stderr: null, // something that can write(input: string): void
             binary: wasmBinary, // the binary for test name collection
-            reporter: {} as any,
+            reporter: new EmptyReporter(),
         }));
     }, [wasmBinary]);
 
