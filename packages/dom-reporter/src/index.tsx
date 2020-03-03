@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TestContext, EmptyReporter } from "@as-pect/core";
+import { TestContext, EmptyReporter } from "@as-pect/core/src";
 // import { EmptyReporter./DomReporter
 
 interface Props {

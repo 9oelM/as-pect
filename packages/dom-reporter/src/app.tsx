@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom'
 import DomReporter from './index'
 
 ReactDOM.render(
-  <DomReporter />
+  <DomReporter />,
   document.getElementById('root'),
 );

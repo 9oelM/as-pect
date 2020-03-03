@@ -8,7 +8,7 @@
     "build": "rimraf ./dist && tsc",
     "dev": "parcel src/index.html",
     "asp:clean": "rimraf ../assembly/assembly/__tests__/**/*.wasm",
-    "asp:binary": "asp --output-binary"
+    "asp:binary": "node ../cli/lib/index --norun"
   },
   "author": "",
   "license": "MIT",
